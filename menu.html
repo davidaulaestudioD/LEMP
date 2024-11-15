@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes</title>
+    <style>
+        body {
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .button-container button {
+            width: 250px;
+            padding: 10px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Menu</h1>
+    <div class="button-container">
+        <form action="ver_clientes.php" method="POST">
+            <button type="submit">Ver lista de clientes</button>
+        </form>
+        <form action="añadir_cliente.php" method="POST">
+            <button type="submit">Añadir nuevo cliente</button>
+        </form>
+        <form action="borrar_cliente.php" method="POST">
+            <button type="submit">Borrar cliente</button>
+        </form>
+        <form action="modificar_cliente.php" method="POST">
+            <button type="submit">Modificar cliente</button>
+        </form>
+        <form action="index.html" method="POST">
+            <button type="submit" style="background-color: #dc3545;">Salir</button>
+        </form>
+    </div>
+</body>
+</html>
